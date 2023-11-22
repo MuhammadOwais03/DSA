@@ -143,7 +143,7 @@ def MaxDList(head):
     return max_
 
 # Question 11 
-# Bubble Sort In DLL
+# Bubble Sort In DLL and SLL
 
 def sortDLL(head):
     h = head
