@@ -3,6 +3,7 @@ from LRUcahe import *
 l = LRU(2)
 l.put(1,1)
 l.put(2,2)
+l.put(1,6)
 print("Value Of key 1: ", l.get(1))
 l.put(3,3)
 l.put(4,4)
