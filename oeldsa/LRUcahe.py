@@ -8,15 +8,16 @@ class LRU:
 
     def put(self,key, value):
         elements, track = self.lru.getter()
-        
+        flag = False
         if track > -1:
                 for k, instance in elements:
                         if key == k:
                             self.lru.delete([k,instance])
+                            flag = True
                             break
-                        elif track == self.length-1:
+                if not flag and track == self.length-1:
                             self.lru.pop()
-                            break
+                            
         self.lru.push([key, value])
 
     def get(self, key):
