@@ -35,6 +35,14 @@ class doublyLinkList:
         while a is not None:
             print(a.data)
             a = a.next
+
+    def __len__(self):
+        count = 0
+        a = self
+        while a is not None:
+            a = a.next
+            count += 1
+        return count
     
 
 

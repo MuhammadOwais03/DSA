@@ -39,6 +39,8 @@ class LRU:
             print([key, value.data])
         print("Recently Used")
 
+    
+
 # l = LRU(2)
 
 # print(l.put(1,1))
